@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Book App</h1>
+        <form id="book-edit-form">
+            <div class="form-group">
+                <label for="book-edit-title">Tytuł książki:</label>
+                <input type="text" id="book-edit-title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="book-edit-author">Autor książki: </label>
+                <input type="text" id="book-edit-author" class="form-control">
+            </div>
+            <div class="form-group mt-4">
+                <select name="category" id="book-category" class="form-control">
+                </select>
+            </div>
+            <div class="form-group mt-4">
+                <select name="priority" id="book-edit-priority" class="form-control">
+                    <option value="1">1 - Jak będzie dużo wolnego czasu</option>
+                    <option value="2">2 - Niedzielna lektura</option>
+                    <option value="3">3 - Warto przeczytać</option>
+                    <option value="4">4 - Należy po nią sięgnąć</option>
+                    <option value="5">5 - Jak najszybciej</option>
+                </select>
+            </div>
+            <button type="submit" id="edit-book" class="btn btn-primary btn-block mt-4">Zapisz zmiany</button>
+            <a href="./index.html" class="btn btn-secondary mt-4">Wróć do tabeli</a>
+        </form>
+
+    </div>
+
+    <script src="/scripts/edit-bundle.js"></script>
+</body>
+
+</html>
